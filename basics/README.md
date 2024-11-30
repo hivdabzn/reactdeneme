@@ -63,3 +63,31 @@
 - React projesine bir paketin spesifik bir sürümünü indirmek için `npm install paket_ismi@ilgili_sürüm` komutuyla indirme işlemi yapılır.Eğer sürüm indirilimezse en son sürüm projeye dahil edilir.
 
 - Eğer hatalı bir işlem yapılıp yanlış bir kütüphane indirilidyse bunu `npm unisntall paket_ismi` komutuyla projemizden kaldırırız.
+
+# Koşullu Renderlama
+
+- Render Nedir ?: Render bir elamanın ekrana basılmasıdır.
+
+- Koşullu Renderlama Nedir ?: Koşullu renderlama render işleminin bir koşul neticesinde yapılmasıdır.
+
+- Koşullu renderlama yapılırken iki yöntem vardır.
+
+# 1-) Ternary Operatör kullanımı:
+
+- Bu yöntemde ilgili koşulun sağlanmaması durumundada bir işlem tetiklenir.
+
+# 2-) & kullanımı:
+
+- Belirtilen şart sağlanıyorsa işlem yapılır aksi durumda herhangi bir işlem yapılmaz.
+
+# Props:
+
+- React'da yapıları componentler şeklinde oluşturduğumuzdan bahsettik.bu ilgili componentler import edildiği yerde bizim için kullanılır hale gelir.Fakat bu bileşenlerin dinamik hale olmaması bir sorun teşkil eder.Bu noktada ilgili elemanın içeriğini dinamik hale getirmek için bu bileşene propslar aktarılır.Bu sayede ilgili bileşen dinamik hale gelir.
+
+# Çoklu Renderlama
+
+- Birden fazla elemanı çoklu şekilde ekrana render etmek için çoklu renderlama kullanılır.
+
+- Jsx bizim için js kodlarını {} içerisinde yazmamızı istediği için bir diziyi dönerek her eleman için belirlene componenti render ederiz.
+
+- Çoklu rendelama yapılırken react bizden her eleman için 'Benzersiz' bir key propu ister.Bu sayede her elemanı ayırt eder ve VDOM konusunda değindiğimiz sadece ilgili elemanın render edilmesini sağlar

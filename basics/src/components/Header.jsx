@@ -24,15 +24,7 @@ export const Header = () => {
   return (
     <>
       {/* Header */}
-      <header
-        // style={{
-        //   backgroundColor: "red",
-        //   display: "flex",
-        //   justifyContent: "space-between",
-        //   padding: 20,
-        // }}
-        className="d-flex justify-content-between "
-      >
+      <header className="d-flex justify-content-between ">
         <h1 className="">{name} </h1>
 
         <ul className="d-flex justify-content-between gap-3 ist-group">
