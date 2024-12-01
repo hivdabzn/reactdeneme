@@ -13,6 +13,20 @@ class CounterClass extends Component {
     };
   }
 
+  //  Bir bileşenin ekrana gelme anını izle
+  componentDidMount() {
+    console.log(`Bileşen ekrana geldi `);
+  }
+
+  // Bir bileşenin güncellenmesini izle
+  componentDidUpdate() {
+    console.log(`Bileşen güncellendi`);
+  }
+  // Bir bileşenin ekrandan kaldırlmasını izle
+  componentWillUnmount() {
+    console.log(`Bileşen ekrandan gitti`);
+  }
+
   render() {
     return (
       <div className="m-5 d-flex gap-3 justify-content-center">
