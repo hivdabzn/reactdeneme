@@ -1,17 +1,17 @@
 {
   "contact": [
     {
-      "name": "Cebrail Çelik",
+      "name": "Merve Ucar",
       "positon": "Frontend Developer",
       "company": "Udemig",
-      "phone": "+90 555 666 77 77",
-      "email": "cebrailçelik@gmail.com",
+      "phone": "+90 555 678 77 75",
+      "email": "merveucar@gmail.com",
       "id": "skdkd2"
     },
     {
       "name": "Ece Yılmaz",
       "positon": "Backend Developer",
-      "company": "Udemig",
+      "company": "Emaartech",
       "phone": "+90 533 444 88 88",
       "email": "eceyilmaz@gmail.com",
       "id": "abc123"
@@ -41,11 +41,11 @@
       "id": "dev001"
     },
     {
-      "name": "Aslı Erdem",
+      "name": "Aslı Kuzucu",
       "positon": "Data Scientist",
       "company": "DataWorks",
       "phone": "+90 555 987 65 43",
-      "email": "aslierdem@dataworks.com",
+      "email": "aslikuzucu@dataworks.com",
       "id": "data002"
     },
     {
@@ -71,6 +71,30 @@
       "phone": "+90 555 432 10 98",
       "email": "cancelik@securenet.com",
       "id": "cyber005"
+    },
+    {
+      "name": "Cihan Hayta",
+      "positon": "Frontend Developer",
+      "company": "Udemig",
+      "phone": "5556667898",
+      "email": "cihan@gmail.com",
+      "id": "lRf0-9f"
+    },
+    {
+      "name": "Can Karaosmanoğlu",
+      "positon": "React Developer",
+      "company": "Emaartech",
+      "phone": "5556667898",
+      "email": "can@gmail.com",
+      "id": "E7gUP_6"
+    },
+    {
+      "name": "Mansur Yılmaz",
+      "positon": "React Developer",
+      "company": "Udemig",
+      "phone": "55566678467",
+      "email": "mansur@gmail.com",
+      "id": "uDOxf29"
     }
   ]
 }

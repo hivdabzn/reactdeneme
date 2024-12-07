@@ -7,17 +7,23 @@ import { HiMiniSquares2X2 } from "react-icons/hi2";
 import { IoPersonAdd } from "react-icons/io5";
 // Components Import
 import Card from "./components/Card";
+import Modal from "./components/Modal";
+
+// axios la baseUrl tanımlama
+
+axios.defaults.baseURL = "http://localhost:3000";
 function App() {
   // Bileşen içerisinde verileri yönetmek için state tanımla
   const [contacts, setContacts] = useState([]);
-  // Sayfa yüklendiğinde api'dan verileri al
+  const [isModelOpen, setIsModelOpen] = useState(false);
+  const [editItem, setEditItem] = useState(null);
+
+  // ! Sayfa yüklendiğinde api'dan verileri al
   useEffect(() => {
-    axios
-      .get("http://localhost:3000/contact")
-      .then((res) => setContacts(res.data));
+    axios.get("/contact").then((res) => setContacts(res.data));
   }, []);
 
-  // Form gönderildiğinde çalışacak fonksiyon
+  // ! Form gönderildiğinde çalışacak fonksiyon
   const handleSubmit = (e) => {
     // Sayfa yenilemesini engelle
     e.preventDefault();
@@ -30,9 +36,38 @@ function App() {
     };
 
     // İnputtan alına değer neticesinde ilgili veriyi api'dan al
-    axios
-      .get("http://localhost:3000/contact", { params })
-      .then((res) => setContacts(res.data));
+    axios.get("/contact", { params }).then((res) => setContacts(res.data));
+  };
+
+  // ! Sil butonuna tıklanınca ilgili kişiyi silen fonksiyon
+
+  const handleDelete = (id) => {
+    const res = confirm("Kişiyi silmek istediğinizden eminmisiniz ?");
+
+    if (res) {
+      // Api dan id'si bilinen kullanıcıyı silsin
+      axios
+        .delete(`/contact/${id}`)
+        .then(() => {
+          // Silinen kişiyi state'den kaldır
+          const updated = contacts.filter((contact) => contact.id !== id);
+          setContacts(updated);
+        })
+        .catch((err) => {
+          alert("Silme işlemi sırasında bir hata oluştu !!");
+          alert(err);
+        });
+    }
+  };
+
+  // ! Güncelle ikonuna tıklayınca ilgili kişi verisinini güncelleyecek fonksiyon
+
+  const handleEdit = (contact) => {
+    //  Modal'ı Aç
+    setIsModelOpen(true);
+
+    // Güncellenecek kişiyi state e aktar
+    setEditItem(contact);
   };
 
   return (
@@ -56,7 +91,7 @@ function App() {
             <HiMiniSquares2X2 />
           </button>
 
-          <button className="add">
+          <button onClick={() => setIsModelOpen(true)} className="add">
             <IoPersonAdd />
             <span>Yeni Kişi</span>
           </button>
@@ -65,9 +100,22 @@ function App() {
       {/* Main */}
       <main>
         {contacts.map((contact) => (
-          <Card key={contact.id} contact={contact} />
+          <Card
+            key={contact.id}
+            contact={contact}
+            handleDelete={handleDelete}
+            handleEdit={handleEdit}
+          />
         ))}
       </main>
+      {/* Modal */}
+      <Modal
+        isModelOpen={isModelOpen}
+        setIsModelOpen={setIsModelOpen}
+        setContacts={setContacts}
+        editItem={editItem}
+        setEditItem={setEditItem}
+      />
     </div>
   );
 }
