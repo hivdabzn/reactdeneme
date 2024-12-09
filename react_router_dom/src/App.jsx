@@ -1,17 +1,24 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Product from "./pages/Product";
+import Category from "./pages/Category";
 import Header from "./components/Header";
-import HomePage from "./pages/HomePage";
-import AboutUsPage from "./pages/AboutUsPage";
-import EducationsPage from "./pages/EducationsPage";
+import Footer from "./components/Footer";
+import Detail from "./pages/Detail";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutUsPage />} />
-        <Route path="/educations" element={<EducationsPage />} />
-      </Routes>
+      <div className="page">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ürünler" element={<Product />} />
+          <Route path="/kategori" element={<Category />} />
+          <Route path="/detay/:id" element={<Detail />} />
+        </Routes>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 };
