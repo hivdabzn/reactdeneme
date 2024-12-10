@@ -8,22 +8,40 @@
 
 - React Router Dom kütüphanesi react'ın SPA mantalitesine uygun şekilde route'ları ifade etme imkanı sağlayan bir kütüphanedir.Bu kütüphane sayesinde hem çok sayfalı projeleri çok kolay bir şekilde yönetebilir sayfalar arasında kolay bir şekilde geçiş yapabiliriz.
 
-- Route:
+# Route:
 
 - Her rota için url'e bağlı olarak render edilecek sayfayı belirler.
 
-- Routes:
+# Routes:
 
 - Tarayıcıdaki url değişimini tespit ederek route'lardaki path değeleriyle eşleşen sayfaların render edilmesini sağlar.
 
-- Link:
+# Link:
 
 - Proje içerisinde a etiketinin görevini üstlenir.Fakat Link SPA a uygun olarak bu işlemi sayfa yenilemeden yapar.
 
-- NavLink:
+# NavLink:
 
 - Link etiketi gibi yönlendirme yapar.Ekstra olarak mevcut sayfadaki linke active classı atar.Bu sayede ilgili link stillendirilebilir.
 
-- useParams:
+# useParams:
 
 - url'deki parametrelere erişme olanağı sağlar.
+
+# Dynamic Routes:
+
+- Sayfa içeriğinin url'e göre değiştiği sayfalardır.useSearchParams ile iligli url'i kontrol ederek urle bağlı renderlama yapılır.
+
+# useSearchParams:
+
+- url'deki paramterelere erişme,urli güncelleme yetkinliği sağlayan bu yapı sayesinde dynamic route lar oluşturulur.Bu metot içerisinde bulunan get ve set yapılarıyla url üzerinde işlem yapmamıza olanak tanır.
+
+# useNavigate:
+
+- Link etiketiyle yapılan sayfa yönlendirmesini yapan bir fonkisyondur.
+
+# Nested Routes:
+
+- Bir kapsam eleman içerisinde farklı yapılar oluşturmamıza Nested routes denir.
+
+- Bu özellik sayesinde sadece belirtilen sayfalar için ortak özellik geliştirilir.

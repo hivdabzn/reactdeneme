@@ -4,6 +4,7 @@ const Filter = () => {
   // url'deki arama parametrelerine erişmek ve bu parametreleri yönetmek için  useSearchParams kullanılır.Bu metod url'deki parametrelere erişme ve güncellemek için kullanılır
   const [searchParams, setSearchParams] = useSearchParams();
 
+  // ! Aratma işlemini yapan fonksiyon
   const handleSubmit = (e) => {
     // Sayfa yenilemesini engelle
     e.preventDefault();
@@ -17,14 +18,27 @@ const Filter = () => {
     setSearchParams(searchParams);
   };
 
+  // ! Sıralama işlemini yapan fonksiyon
+
+  const handleChange = (e) => {
+    // Select alanındaki değere eriş
+    const text = e.target.value;
+
+    // Erişilen bu değer ile url'e parametre geç
+    searchParams.set("sort", text);
+
+    // url'i güncelle
+    setSearchParams(searchParams);
+  };
+
   return (
     <div className="d-flex justify-content-between align-items-center my-4 gap-3">
       {/* Select */}
       <div>
-        <select className="form-select">
+        <select onChange={handleChange} className="form-select">
           <option value="">sırala</option>
-          <option value="">a-z</option>
-          <option value="">z-a</option>
+          <option value="a-z">a-z</option>
+          <option value="z-a">z-a</option>
         </select>
       </div>
       {/* Form */}
