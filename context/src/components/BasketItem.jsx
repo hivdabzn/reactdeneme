@@ -1,5 +1,9 @@
+import { useContext } from "react";
+import { BasketContext } from "../context/basketContext";
+
 const BasketItem = ({ item }) => {
-  console.log(item);
+  const { addToBasket, removeFromBasket, decreaseAmount } =
+    useContext(BasketContext);
 
   return (
     <div className="d-flex align-items-center gap-3 bg-body text-black p-3 rounded  ">
@@ -18,14 +22,18 @@ const BasketItem = ({ item }) => {
         </div>
 
         <div className="d-flex justify-content-end align-items-center gap-4">
+          <span className="text-success fw-bold text-center">
+            {(item.price * item.amount).toFixed(2)}₺
+          </span>
+
           <div className="rounded overflow-hidden d-flex gap-3">
-            <button>+</button>
-            <button>-</button>
+            <button onClick={() => addToBasket(item)}>+</button>
+            <button onClick={() => decreaseAmount(item.id)}>-</button>
           </div>
 
           <h4>{item.amount} </h4>
 
-          <button>Sil</button>
+          <button onClick={() => removeFromBasket(item.id)}>Sil</button>
         </div>
       </div>
     </div>

@@ -2,7 +2,10 @@ import { useContext } from "react";
 import { BasketContext } from "../context/basketContext";
 
 const Card = ({ product }) => {
-  const { addToBasket } = useContext(BasketContext);
+  const { basket, addToBasket } = useContext(BasketContext);
+
+  // ekran basılan karttaki ürünü sepette ara
+  const basketItem = basket.find((i) => i.id === product.id);
 
   return (
     <div className="card py-3">
@@ -13,7 +16,7 @@ const Card = ({ product }) => {
         <h4 className="text-truncate">{product.title} </h4>
         <h4 className="text-secondary">{product.category} </h4>
         <button className="w-100 rounded" onClick={() => addToBasket(product)}>
-          Sepete Ekle
+          Sepete Ekle ({basketItem?.amount || 0})
         </button>
       </div>
     </div>
