@@ -29,7 +29,7 @@ const Feed = () => {
 
     // api isteği at
     api
-      .get(url)
+      .get(url, { params: { geo: "TR", lang: "tr" } })
       .then((res) => setVideos(res.data.data))
       .catch((err) => setError(err.message));
   }, [selected]);

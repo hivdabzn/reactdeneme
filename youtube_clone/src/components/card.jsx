@@ -2,7 +2,7 @@ import millify from "millify";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Card = ({ item }) => {
+const Card = ({ item, isRow }) => {
   // mouse card'ın üzerinde mi state'i
   const [isHover, setIsHover] = useState(false);
 
@@ -21,7 +21,7 @@ const Card = ({ item }) => {
   return (
     <Link
       to={`/watch?v=${item.videoId}`}
-      className="flex flex-col gap-5"
+      className={isRow ? "row" : "col"}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
@@ -35,7 +35,7 @@ const Card = ({ item }) => {
 
       {/* alt detay */}
       <div className="flex gap-4">
-        <img className="size-14 rounded-full" src={channelPic} />
+        <img className="size-14 rounded-full pp" src={channelPic} />
 
         <div>
           <h4 className="font-bold line-clamp-2">{item.title}</h4>
@@ -45,7 +45,7 @@ const Card = ({ item }) => {
           <div className="flex gap-3 items-center">
             <p>
               <span>{millify(item.viewCount)}</span>
-              <span className="text-sm ms-1">Görüntülenme</span>
+              <span className="text-sm ms-1 views">Görüntülenme</span>
             </p>
             *
             {item.isLive ? (
