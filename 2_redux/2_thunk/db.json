@@ -5,7 +5,7 @@
       "name": "Lezzetin Tadı",
       "minPrice": 90,
       "estimatedDelivery": 45,
-      "photo": "https://picsum.photos/400",
+      "photo": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/5b/a9/39/mengoli-burgers-steak.jpg?w=600&h=400&s=1",
       "rating": 4.7,
       "isDeliveryFree": true,
       "isOpen": false,
@@ -16,7 +16,7 @@
       "name": "Aromalı Ev",
       "minPrice": 40,
       "estimatedDelivery": 35,
-      "photo": "https://picsum.photos/401",
+      "photo": "https://www.grandplaza.com.tr/YuklenenDosyalar/Mekanlar/Buyuk/mekan_29_231.jpg",
       "rating": 4.5,
       "isDeliveryFree": false,
       "isOpen": true,
@@ -27,7 +27,7 @@
       "name": "Lezzet Köşesi",
       "minPrice": 60,
       "estimatedDelivery": 50,
-      "photo": "https://picsum.photos/402",
+      "photo": "https://www.netkurumsal.com/wp-content/uploads/2017/10/restoran.jpg",
       "rating": 4.8,
       "isDeliveryFree": true,
       "isOpen": true,
@@ -38,7 +38,7 @@
       "name": "Keyifli Mekan",
       "minPrice": 45,
       "estimatedDelivery": 40,
-      "photo": "https://picsum.photos/403",
+      "photo": "https://mudavim.net/wp-content/uploads/2018/05/29-ulus-scaled.jpeg",
       "rating": 4.6,
       "isDeliveryFree": true,
       "isOpen": true,
@@ -152,7 +152,7 @@
       "category": "Deniz Ürünleri",
       "price": 45.99,
       "rating": 4.8,
-      "photo": "https://picsum.photos/200",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ttdQRLrjvoQteH2-Wlzj4f87DUmTVuEJmQ&s",
       "restaurantId": "1",
       "isPopular": true
     },
@@ -173,7 +173,7 @@
       "category": "Kebaplar",
       "price": 17.99,
       "rating": 4.7,
-      "photo": "https://picsum.photos/203",
+      "photo": "https://i.lezzet.com.tr/images-xxlarge-recipe/tavuk-kebabi-971f9aac-58c0-4432-9ecd-46b549f0edb0.jpg",
       "restaurantId": "1",
       "isPopular": true
     },
@@ -247,7 +247,7 @@
       "category": "Hint Mutfağı",
       "price": 16.99,
       "rating": 4.8,
-      "photo": "https://picsum.photos/209",
+      "photo": "https://i.nefisyemektarifleri.com/2023/03/13/cok-lezzetli-korili-kremali-tavuk-tarifi-baska-tarif-aramayin-videolu-6.jpg",
       "restaurantId": "5"
     },
     {
@@ -278,7 +278,7 @@
       "category": "Pizza",
       "price": 12.99,
       "rating": 4.5,
-      "photo": "https://picsum.photos/211",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLbGjQUtzEDL82iId1PUW8Eq9B4dWKsNfjwQ&s",
       "restaurantId": "1",
       "isPopular": true
     },
@@ -289,7 +289,7 @@
       "category": "Kebaplar",
       "price": 17.99,
       "rating": 4.7,
-      "photo": "https://picsum.photos/212",
+      "photo": "https://i.lezzet.com.tr/images-xxlarge-recipe/tavuk-kebabi-971f9aac-58c0-4432-9ecd-46b549f0edb0.jpg",
       "restaurantId": "3"
     },
     {
@@ -363,7 +363,7 @@
       "category": "Hint Mutfağı",
       "price": 16.99,
       "rating": 4.8,
-      "photo": "https://picsum.photos/211",
+      "photo": "https://i.nefisyemektarifleri.com/2023/03/13/cok-lezzetli-korili-kremali-tavuk-tarifi-baska-tarif-aramayin-videolu-6.jpg",
       "restaurantId": "4",
       "isPopular": true
     },
@@ -384,8 +384,8 @@
       "category": "Hint Mutfağı",
       "price": 16.99,
       "rating": 4.8,
-      "photo": "https://picsum.photos/211",
-      "restaurantId": "4",
+      "photo": "https://i.nefisyemektarifleri.com/2023/03/13/cok-lezzetli-korili-kremali-tavuk-tarifi-baska-tarif-aramayin-videolu-6.jpg",
+      "restaurantId": "1",
       "isPopular": true
     },
     {
@@ -395,7 +395,7 @@
       "category": "Deniz Ürünleri",
       "price": 21.99,
       "rating": 4.7,
-      "photo": "https://picsum.photos/212",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ttdQRLrjvoQteH2-Wlzj4f87DUmTVuEJmQ&s",
       "restaurantId": "7",
       "isPopular": true
     },
@@ -446,30 +446,35 @@
   ],
   "cart": [
     {
-      "id": "6298d833-dd36-4a1d-8bd3-5491050747b2",
-      "productId": "9",
-      "category": "Salatalar",
-      "title": "İtalyan Salata",
-      "price": 8.49,
-      "photo": "https://picsum.photos/208",
-      "amount": 1
+      "id": "3",
+      "category": "Kebaplar",
+      "title": "Tavuk Kebabı",
+      "price": 17.99,
+      "photo": "https://i.lezzet.com.tr/images-xxlarge-recipe/tavuk-kebabi-971f9aac-58c0-4432-9ecd-46b549f0edb0.jpg",
+      "amount": 4
     },
     {
-      "id": "cdb46435-cdcc-4440-a89e-3f61ca3d492d",
-      "productId": "311",
+      "id": "1",
       "category": "Deniz Ürünleri",
       "title": "Izgara Somon",
-      "price": 21.99,
-      "photo": "https://picsum.photos/212",
-      "amount": 2
+      "price": 45.99,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ttdQRLrjvoQteH2-Wlzj4f87DUmTVuEJmQ&s",
+      "amount": 8
     },
     {
-      "id": "b226fbe0-0a84-4f20-b812-d27785ec7314",
-      "productId": "12",
-      "category": "Atıştırmalıklar",
-      "title": "Çıtır Tavuk Kanadı",
-      "price": 9.99,
-      "photo": "https://picsum.photos/211",
+      "id": "42",
+      "category": "Pizza",
+      "title": "Adana Kebap",
+      "price": 12.99,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLbGjQUtzEDL82iId1PUW8Eq9B4dWKsNfjwQ&s",
+      "amount": 3
+    },
+    {
+      "id": "310",
+      "category": "Hint Mutfağı",
+      "title": "Köri Tavuk",
+      "price": 16.99,
+      "photo": "https://i.nefisyemektarifleri.com/2023/03/13/cok-lezzetli-korili-kremali-tavuk-tarifi-baska-tarif-aramayin-videolu-6.jpg",
       "amount": 6
     }
   ]

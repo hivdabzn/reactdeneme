@@ -1,3 +1,5 @@
+import ActionTypes from "../actionTypes";
+
 const initialState = {
   cart: [],
   isLoading: true,
@@ -6,14 +8,24 @@ const initialState = {
 
 const cartReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "X":
-      return state;
+    case ActionTypes.CART_LOADING:
+      return { ...state, isLoading: true };
 
-    case "Y":
-      return state;
+    case ActionTypes.CART_ERROR:
+      return { ...state, isLoading: false, error: action.payload };
 
-    case "Z":
-      return state;
+    case ActionTypes.CART_SUCCESS:
+      return { ...state, isLoading: false, error: null, cart: action.payload };
+
+    case ActionTypes.CREATE_ITEM:
+      return { ...state, cart: state.cart.concat(action.payload) };
+
+    case ActionTypes.UPDATE_ITEM:
+      const updated = state.cart.map((item) =>
+        item.id === action.payload.id ? action.payload : item
+      );
+
+      return { ...state, cart: updated };
 
     default:
       return state;

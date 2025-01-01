@@ -1,26 +1,16 @@
 import { useEffect } from "react";
-import api from "../../api/index";
 import { useDispatch, useSelector } from "react-redux";
-import ActionTypes from "../../redux/actionTypes";
+import { getRestaurants } from "../src/redux/actions/restActions";
 
-const Home = () => {
+const Home2 = () => {
   const { isLoading, error, restaurants } = useSelector(
     (store) => store.restaurantReducer
   );
-
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch({ type: ActionTypes.REST_LOADING });
-
-    api
-      .get("/restaurants")
-      .then((res) => {
-        dispatch({ type: ActionTypes.REST_SUCCESS, payload: res.data });
-      })
-      .catch((err) => {
-        dispatch({ type: ActionTypes.REST_ERROR, payload: err });
-      });
+    // asenkron aksiyon tetikle
+    dispatch(getRestaurants());
   }, []);
 
   return (
@@ -39,4 +29,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home2;
