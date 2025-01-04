@@ -33,7 +33,8 @@ export const createItem = (product) => async (dispatch) => {
   api
     .post("/cart", newItem)
     // 3) istek başarılı olursa reducer'a haber ver
-    .then(() => dispatch({ type: ActionTypes.CREATE_ITEM, payload: newItem }));
+    .then(() => dispatch({ type: ActionTypes.CREATE_ITEM, payload: newItem }))
+    .catch((err) => alert("Üzgünüz bir sorun oluştu"));
 };
 
 // api'daki ürünün miktarını güncelle ve reducer'a haber
@@ -44,5 +45,14 @@ export const updateItem = (id, newAmount) => async (dispatch) => {
     // istek başarılı olursa reducer'a haber ver
     .then((res) =>
       dispatch({ type: ActionTypes.UPDATE_ITEM, payload: res.data })
-    );
+    )
+    .catch((err) => alert("Üzgünüz bir sorun oluştu"));
+};
+
+// api'daki ürünü isldikten sonra reducer'a haber gönder
+export const deleteItem = (id) => async (dispatch) => {
+  api
+    .delete(`/cart/${id}`)
+    .then(() => dispatch({ type: ActionTypes.DELETE_ITEM, payload: id }))
+    .catch((err) => alert("Üzgünüz bir sorun oluştu"));
 };

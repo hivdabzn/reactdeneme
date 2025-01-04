@@ -14,7 +14,7 @@ const Card = ({ restaurant }) => {
 
       <img
         src={restaurant.photo}
-        className="w-full object-cover max-h-[250px]"
+        className="w-full object-cover h-[250px] lg:h-[200px]"
       />
 
       <div className="p-3">

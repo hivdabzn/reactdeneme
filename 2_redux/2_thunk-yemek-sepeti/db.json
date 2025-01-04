@@ -446,22 +446,6 @@
   ],
   "cart": [
     {
-      "id": "3",
-      "category": "Kebaplar",
-      "title": "Tavuk Kebabı",
-      "price": 17.99,
-      "photo": "https://i.lezzet.com.tr/images-xxlarge-recipe/tavuk-kebabi-971f9aac-58c0-4432-9ecd-46b549f0edb0.jpg",
-      "amount": 4
-    },
-    {
-      "id": "1",
-      "category": "Deniz Ürünleri",
-      "title": "Izgara Somon",
-      "price": 45.99,
-      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ttdQRLrjvoQteH2-Wlzj4f87DUmTVuEJmQ&s",
-      "amount": 8
-    },
-    {
       "id": "42",
       "category": "Pizza",
       "title": "Adana Kebap",
@@ -470,12 +454,20 @@
       "amount": 3
     },
     {
+      "id": "1",
+      "category": "Deniz Ürünleri",
+      "title": "Izgara Somon",
+      "price": 45.99,
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9ttdQRLrjvoQteH2-Wlzj4f87DUmTVuEJmQ&s",
+      "amount": 2
+    },
+    {
       "id": "310",
       "category": "Hint Mutfağı",
       "title": "Köri Tavuk",
       "price": 16.99,
       "photo": "https://i.nefisyemektarifleri.com/2023/03/13/cok-lezzetli-korili-kremali-tavuk-tarifi-baska-tarif-aramayin-videolu-6.jpg",
-      "amount": 6
+      "amount": 2
     }
   ]
 }
