@@ -37,9 +37,9 @@ const Detail = () => {
 
       <Content movie={movie} />
 
-      <Actors movie={movie} />
+      <Actors cast={movie.credits.cast} />
 
-      <Trailers movie={movie} />
+      <Trailers videos={movie.videos.results} />
     </div>
   );
 };

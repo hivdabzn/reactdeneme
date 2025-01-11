@@ -1,7 +1,6 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { useEffect, useState } from "react";
 import api from "../../utils/api";
-import "@splidejs/react-splide/css";
 import { baseImgUrl } from "../../utils/constants";
 import { Link } from "react-router-dom";
 
