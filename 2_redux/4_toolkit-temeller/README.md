@@ -24,3 +24,29 @@
 - klasik redux'ta aksiyonları, aksiyon tiplerini, reducerları ayro dosyalarda tanımlıyorduk.
 
 - redux toolkit içerisinde yer alan slice yapısı sayesinde tek bir noktada hem reducer'ı hem aksiyonları hemde aksiyon tiplerini tanımlayabiliyoruz
+
+# Bracket Notation
+
+```JS
+// Challage:
+// Key değişkenin değeri herneyse object isimli nesne içerisindeki o değere erişmeliyiz
+// Bracket notation yöntemini bir nesne içersiindeki değere dinamik olarak erişmek istiyorsak veya nesnenin anahtarı özel karakter içeriyorsa kullanırız.
+
+const key = "name";
+
+const object = {
+  name: "Ali",
+  age: 80,
+  "kişi-cinsiyeti": "Erkek",
+};
+
+object["kişi-cinsiyeti"];
+
+object["name"];
+
+object["age"];
+
+console.log(object[key]);
+
+
+```
