@@ -9,4 +9,4 @@
 - tailwindcss
 - @splidejs/splide
 - @splidejs/react-splide
-- millify
+
