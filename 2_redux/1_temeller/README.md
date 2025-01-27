@@ -34,19 +34,4 @@
 
 6. Provider: Store'da tutulan verileri uygulamaya sağlar
 
-## Kurulum
 
-- paketleri indir (redux | react-redux)
-- reducer/reducer'lar oluştur
-- store'u oluştur
-- store'u projeye tanıt (provider)
-
-# Aksiyon Dispatch Etme
-
-- eski yötem
-- dispatch({ type: ActionTypes.UPDATE, payload: updatedTodo });
-
-- yeni yöntem
-- dispatch(update(updatedTodo));
-
-- - Bu aksiyon oluşturan fonksiyonlar sayesinde aksiyona birden fazla kez ihtiyaç duyarsak oluşacak kod tekrarını önlüyoruz
