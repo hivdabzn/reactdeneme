@@ -47,6 +47,3 @@ object["name"];
 object["age"];
 
 console.log(object[key]);
-
-
-```
