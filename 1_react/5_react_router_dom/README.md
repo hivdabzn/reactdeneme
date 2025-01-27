@@ -40,8 +40,4 @@
 
 - Link etiketiyle yapılan sayfa yönlendirmesini yapan bir fonkisyondur.
 
-# Nested Routes:
 
-- Bir kapsam eleman içerisinde farklı yapılar oluşturmamıza Nested routes denir.
-
-- Bu özellik sayesinde sadece belirtilen sayfalar için ortak özellik geliştirilir.
