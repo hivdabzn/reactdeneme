@@ -33,9 +33,3 @@ useMemo(() => {
 
 - Bileşen içerisinde tanımladığımız fonksiyonlar her render sırasında tekrardan oluşur ve bellekte farklı noktalarda tutulur farklı referanslara sahip olurlar
 - useCallback kullanarak fonksiyonu önbelleğe alırız ve her render sırasında gereksiz yere tekrardan oluşturulmasını ve bellekte farklı bir referansa sahip olumasının önüne geçeriz
-
-```js
-useCallback((item) => {
-  alert(`${item} sepete eklendi`);
-}, []);
-```
