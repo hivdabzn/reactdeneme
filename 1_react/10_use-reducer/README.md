@@ -16,7 +16,3 @@
 - Aksiyonlar'ı reducer adını verdiğimiz yapıya gönderir.
 - dispatch("EKLE")  | dispatch("SİL")
 
-# Reducer
-
-- useReducer hooku ile yönettiğimiz state'in nasıl değişeceğine karar veren fonksiyondur.
-- Dispatch aracılığı ile aldığı aksiyonlarına bağlı olarak state'de nasıl bir güncelleme olucağını belirler
