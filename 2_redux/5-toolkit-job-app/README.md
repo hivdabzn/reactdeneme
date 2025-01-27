@@ -7,4 +7,3 @@
 - react-toastify
 - json-server
 - axios
-- react-icons
