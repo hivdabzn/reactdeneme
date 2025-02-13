@@ -1,4 +1,4 @@
-# React Lessons Repository
+# React 
 
 Bu depo, React konularını kapsayan çeşitli dersleri ve örnek projeleri içermektedir. Aşağıda her klasörün içeriği ve proje kurulum adımları verilmiştir.
 
@@ -43,4 +43,88 @@ Projeyi çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
 - Eğer herhangi bir hata alırsanız, bağımlılıkları tekrar yükleyerek deneyebilirsiniz.
 
 📧 Herhangi bir sorunuz olursa benimle iletişime geçebilirsiniz! 😊
+
+# Redux & Thunk Lessons Repository
+
+Bu depo, Redux ve Thunk konularını içeren dersleri ve örnek projeleri kapsamaktadır. Aşağıda her klasörün içeriği ve proje kurulum adımları verilmiştir.
+
+## 📂 İçerik
+
+| Klasör Adı                  | Açıklama |
+|-----------------------------|----------|
+| `1_temeller`                | Redux'un temel kavramları |
+| `2_thunk-yemek-sepeti`      | Redux Thunk ile yemek sepeti uygulaması |
+| `3_thunk-netlix`            | Redux Thunk kullanarak Netflix benzeri uygulama |
+| `4_toolkit-temeller`        | Redux Toolkit'in temel kullanımı |
+| `5_toolkit-job-app`         | Redux Toolkit ile iş başvuru uygulaması |
+
+## 🚀 Kurulum
+
+Projeyi çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
+
+1. Depoyu klonlayın:
+   ```sh
+   git clone <repo-link>
+   ```
+2. İlgili klasöre gidin:
+   ```sh
+   cd <klasor_adi>
+   ```
+3. Bağımlılıkları yükleyin:
+   ```sh
+   npm install
+   ```
+4. Projeyi başlatın:
+   ```sh
+   npm start
+   ```
+
+## 📌 Notlar
+- Projeler farklı klasörlerde yer aldığı için her proje klasörüne girerek `npm install` komutunu çalıştırmanız gerekmektedir.
+- Eğer herhangi bir hata alırsanız, bağımlılıkları tekrar yükleyerek deneyebilirsiniz.
+
+📧 Herhangi bir sorunuz olursa benimle iletişime geçebilirsiniz! 😊
+
+# Redux & Thunk Lessons Repository
+
+Bu depo, Redux ve Thunk konularını içeren dersleri ve örnek projeleri kapsamaktadır. Aşağıda her klasörün içeriği ve proje kurulum adımları verilmiştir.
+
+## 📂 İçerik
+
+| Klasör Adı                  | Açıklama |
+|-----------------------------|----------|
+| `1_temeller`                | Redux'un temel kavramları |
+| `2_thunk-yemek-sepeti`      | Redux Thunk ile yemek sepeti uygulaması |
+| `3_thunk-netlix`            | Redux Thunk kullanarak Netflix benzeri uygulama |
+| `4_toolkit-temeller`        | Redux Toolkit'in temel kullanımı |
+| `5_toolkit-job-app`         | Redux Toolkit ile iş başvuru uygulaması |
+
+## 🚀 Kurulum
+
+Projeyi çalıştırmak için aşağıdaki adımları takip edebilirsiniz:
+
+1. Depoyu klonlayın:
+   ```sh
+   git clone <repo-link>
+   ```
+2. İlgili klasöre gidin:
+   ```sh
+   cd <klasor_adi>
+   ```
+3. Bağımlılıkları yükleyin:
+   ```sh
+   npm install
+   ```
+4. Projeyi başlatın:
+   ```sh
+   npm start
+   ```
+
+## 📌 Notlar
+- Projeler farklı klasörlerde yer aldığı için her proje klasörüne girerek `npm install` komutunu çalıştırmanız gerekmektedir.
+- Eğer herhangi bir hata alırsanız, bağımlılıkları tekrar yükleyerek deneyebilirsiniz.
+
+📧 Herhangi bir sorunuz olursa benimle iletişime geçebilirsiniz! 😊
+
+
 
